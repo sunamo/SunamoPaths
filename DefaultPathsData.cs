@@ -53,20 +53,6 @@ public partial class DefaultPaths
     public static readonly string XnConvert = @"D:\Pictures\XnConvert\";
     public const string PhotosScz = @"D:\Pictures\photos.sunamo.cz\";
 
-    //[Obsolete("Vůbec nechápu k čemu to má být")]
-    //public static List<string> AllPathsToProjects;
-
-    /// <summary>
-    ///     Solution, not project
-    /// </summary>
-    //public static readonly string sunamo;
-
-    //[Obsolete("There is none sunamo\\sunamo")]
-    ///// <summary>
-    /////     Cant be used also VpsHelperSunamo.SunamoProject()
-    ///// </summary>
-    //public static readonly string sunamoProject;
-
     /// <summary>
     ///     E:\Documents\vs\Projects\
     /// </summary>
@@ -96,7 +82,7 @@ public partial class DefaultPaths
 
     //public const string rootVideos0Kb = @"D:\Documents\Videos0kb\";
     public static readonly string Documents = @"D:\Documents\";
-    public static readonly string eDocuments = @"E:\Documents\";
+    public const string eDocuments = @"E:\Documents\";
     public static readonly string Docs = @"D:\Docs\";
     public static readonly string Downloads = @"D:\Downloads\";
     public static readonly string Music2 = @"D:\Music2\";

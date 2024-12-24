@@ -9,7 +9,7 @@ public class CompareFilesPaths
 }
 public class CompareTwoFilesHelper
 {
-    static string basePath = DefaultPaths.eVs + @"Projects\_tests\CompareTwoFiles\CompareTwoFiles\";
+    static readonly string basePath = DefaultPaths.eVs + @"Projects\_tests\CompareTwoFiles\CompareTwoFiles\";
     public static string Txt(int n)
     {
         return basePath + @"txt\" + n + ".txt";
