@@ -1,26 +1,25 @@
 # SunamoPaths
 
-Paths for internal use of sunamo's projects
+Paths for internal use of sunamo's projects.
 
 ## Overview
 
-SunamoPaths is part of the Sunamo package ecosystem, providing modular, platform-independent utilities for .NET development.
+SunamoPaths is part of the Sunamo package ecosystem, providing modular, platform-independent path utilities for .NET development. It defines default paths used across the sunamo project infrastructure, including Visual Studio project roots, document folders, and comparison test file helpers.
 
 ## Main Components
 
 ### Key Classes
 
-- **CompareFilesPaths**
-- **CompareTwoFilesHelper**
-- **DefaultPaths**
+- **DefaultPaths** - Central repository of path constants and static fields for the sunamo project infrastructure (VS root, project folders, documents, sync archives, etc.)
+- **CompareFilesPaths** - Helper for constructing file paths used in file comparison operations
+- **CompareTwoFilesHelper** - Helper for constructing paths to text and HTML comparison test files
 
 ### Key Methods
 
-- `GetFile()`
-- `Txt()`
-- `Html()`
-- `IsIgnored()`
-- `InitAllPathsToProjects()`
+- `CompareFilesPaths.GetFile()` - Gets a comparison file path by extension type and index
+- `CompareTwoFilesHelper.Txt()` - Gets a text comparison file path by index
+- `CompareTwoFilesHelper.Html()` - Gets an HTML comparison file path by index
+- `DefaultPaths.IsIgnored()` - Checks whether a path matches known ignore patterns
 
 ## Installation
 
@@ -30,15 +29,14 @@ dotnet add package SunamoPaths
 
 ## Dependencies
 
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
+- **Microsoft.Extensions.Logging.Abstractions** (v10.0.2)
 
 ## Package Information
 
 - **Package Name**: SunamoPaths
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
+- **Version**: 26.2.7.2
+- **Target Frameworks**: net10.0; net9.0; net8.0
 - **Category**: Platform-Independent NuGet Package
-- **Source Files**: 4
 
 ## Related Packages
 
@@ -46,4 +44,4 @@ This package is part of the Sunamo package ecosystem. For more information about
 
 ## License
 
-See the repository root for license information.
+MIT - See the repository root for license information.
