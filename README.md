@@ -1,5 +1,10 @@
 # SunamoPaths
 
+## Short description
+
+Knihovna s výchozími cestami používanými napříč projekty Sunamo. Centralizuje cesty ke složkám aplikací a dat. Obsahuje Runner a testy.
+
+
 Paths for internal use of sunamo's projects.
 
 ## Overview
